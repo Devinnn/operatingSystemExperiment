@@ -287,9 +287,6 @@
         margin-bottom: 10px;
         transition: all 1.5s;
     }
-    /* .el-table__body-wrapper {
-                                                                                                                                                                                                                overflow: hidden;
-                                                                                                                                                                                                            } */
     .list-complete-item {
         transition: all 1.5s;
     }

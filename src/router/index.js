@@ -1,17 +1,32 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import E1 from 'components/experiment/e1';
-import E2 from 'components/experiment/e2';
-import E3 from 'components/experiment/e3';
 
 Vue.use(Router);
+
+const E1 = resolve => {
+    require.ensure([], () => {
+        resolve(require('components/experiment/e1.vue'));
+    });
+};
+
+const E2 = resolve => {
+    require.ensure([], () => {
+        resolve(require('components/experiment/e2.vue'));
+    });
+};
+
+const E3 = resolve => {
+    require.ensure([], () => {
+        resolve(require('components/experiment/e3.vue'));
+    });
+};
 
 export default new Router({
     mode: 'history',
     routes: [
         {
             path: '/',
-            redirect: '/e3'
+            redirect: '/e1'
         },
         {
             path: '/e1',

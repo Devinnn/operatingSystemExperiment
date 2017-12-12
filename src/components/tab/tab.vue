@@ -1,6 +1,6 @@
 <template>
     <div class="tab">
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+        <el-menu :default-active="activeIndex === '/' ? '1' : activeIndex" class="el-menu-demo" mode="horizontal">
             <router-link to="/e1" tag="span">
                 <el-menu-item index="1">
                     进程调度
