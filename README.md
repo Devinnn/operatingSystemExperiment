@@ -34,6 +34,7 @@
 
 1. 已实现路由懒加载，优化首屏加载。
 2. 前两个实验写的比较随便，代码风格欠佳。
+3. `vue-router`使用`history`模式，`express`用`connect-history-api-fallback`中间件做代理。
 
 ## 使用方法
 
